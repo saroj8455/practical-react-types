@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": "1efacd7b-3249-6540-910d-fd6d94bb065e",
+      "body": "For whoever is lonely there is a tavern.",
+      "author": "Georg Trakl"
+    },
+    {
+      "id": "1efacd7b-701c-6f70-b7cc-9279ad915fea",
+      "body": "Nature abhors a vacuum.",
+      "author": "Francois Rabelais"
+    },
+    {
+      "id": "1efacd82-3b73-6f60-952a-7939451f3371",
+      "body": "If your heart is a volcano, how shall you expect flowers to bloom?",
+      "author": "Kahlil Gibran"
+    },
+    {
+      "id": "1efacd92-1c71-62b0-b46e-32057b3bace0",
+      "body": "Adversity's sweet milk, philosophy.",
+      "author": "William Shakespeare"
+    },
+    {
+      "id": "1efacd92-460d-6060-b971-9384ccd43231",
+      "body": "One cannot collect all the beautiful shells on the beach.",
+      "author": "Anne Morrow Lindbergh"
+    },
+    {
+      "id": "1efad17c-e7a0-6150-997d-e75fbbd79318",
+      "body": "The world needs more heroes.",
+      "author": "Unknown"
+    },
+    {
+      "id": "1efad198-bac5-6790-acd7-1628c55981c8",
+      "body": "Call me what you like, only give me some vodka.",
+      "author": "Russian Proverb"
+    },
+    {
+      "id": "1efad1a1-6c46-67a0-a004-02df0514a2d1",
+      "body": "I may be able to spot arrowheads on the desert but a refrigerator is a jungle in which I am easily lost.",
+      "author": "Edward T. Hall"
+    },
+    {
+      "id": "1efad1a2-4f64-6910-8e06-1504f34d7c98",
+      "body": "Adversity's sweet milk, philosophy.",
+      "author": "William Shakespeare"
+    },
+    {
+      "id": "1efad203-3e18-60b0-8f6d-35c4039596e4",
+      "body": "Love is energy of life.",
+      "author": "Robert Browning"
+    }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
