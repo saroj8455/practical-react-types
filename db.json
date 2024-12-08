@@ -51,6 +51,23 @@
       "author": "Robert Browning"
     }
   ],
+  "news": [
+    {
+      "id": "1efad203-3e18-60b0-8f6d-35c4039596e4",
+      "title": "Proin sagittis nisl rhoncus",
+      "text": "In pellentesque massa placerat duis ultricies lacus. Ac feugiat sed lectus vestibulum mattis ullamcorper."
+    },
+    {
+      "id": "1efad1a1-6c46-67a0-a004-02df0514a2d1",
+      "title": "In iaculis nunc sed augue lacus",
+      "text": "Viverra vitae congue. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Elementum eu facilisis sed odio morbi."
+    },
+    {
+      "id": "1efad1a2-4f64-6910-8e06-1504f34d7c98",
+      "title": "Aenean euismod elementum",
+      "text": "Vitae turpis massa sed elementum tempus egestas sed sed risus. In metus vulputate eu scelerisque felis imperdiet proin."
+    }
+  ],
   "comments": [
     { "id": "1", "text": "a comment about post 1", "postId": "1" },
     { "id": "2", "text": "another comment about post 1", "postId": "1" }

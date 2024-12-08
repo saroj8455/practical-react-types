@@ -10,11 +10,13 @@ import Card from './components/Card';
 
 import ProductsDashboard from './components/ProductsDashboard';
 import Peoples from './components/Peoples';
+import LatestNews from './components/LatestNews';
 function App() {
   return (
     <>
       <Welcome />
       <Card />
+      <LatestNews />
       <ProductsDashboard />
       <Peoples />
     </>

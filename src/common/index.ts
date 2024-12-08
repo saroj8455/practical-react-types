@@ -1,4 +1,5 @@
 export const DUMMY_PRODUCTS_API = 'https://dummyjson.com/products/search?q';
+export const NEWS_API = 'http://localhost:3000/news';
 
 export const calcAge = (birthDateString: string) => {
   // date format should be yyyy-mm-dd
@@ -27,3 +28,8 @@ export const calcAge = (birthDateString: string) => {
   console.log(`${age} years - ${m} months - ${d} days`);
   return `${age} years - ${m} months - ${d} days`;
 };
+
+export function randomDelay() {
+  const delay = Math.floor(Math.random() * 2000) + 1000;
+  return new Promise((reslove) => setTimeout(reslove, delay));
+}
