@@ -9,12 +9,14 @@ import { greet, nameShort } from './common/index-string';
 import Card from './components/Card';
 
 import ProductsDashboard from './components/ProductsDashboard';
+import Peoples from './components/Peoples';
 function App() {
   return (
     <>
       <Welcome />
       <Card />
       <ProductsDashboard />
+      <Peoples />
     </>
   );
 }

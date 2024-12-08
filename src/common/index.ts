@@ -9,7 +9,7 @@ export const calcAge = (birthDateString: string) => {
   let m = today.getMonth() - birthDate.getMonth();
   let d = today.getDate() - birthDate.getDate();
   // Adjust months if the current month is earlier than the birth month
-  if (m < 0) {
+  if (m < 0 || (m === 0 && d < 0)) {
     age--;
     m += 12;
   }

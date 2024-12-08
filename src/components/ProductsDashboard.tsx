@@ -13,7 +13,7 @@ export default function ProductsDashboard() {
   const firstRender = useRef(true);
 
   const fetchProducts = useCallback(async () => {
-    const searchQuery = debouncedValue || 'phone';
+    const searchQuery = debouncedValue || '';
     console.log(searchQuery);
     const response = await fetch(`${DUMMY_PRODUCTS_API}=${searchQuery}`);
     const data = (await response.json()) as ApiResponse;
