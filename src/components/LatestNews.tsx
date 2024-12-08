@@ -1,9 +1,9 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import Container from './Container';
 import { Button } from 'primereact/button';
 import News from './News';
-import { NEWS_API, randomDelay } from '../common';
-import axios from 'axios';
+
+import useFetchNews from '../hooks/useFetchNews';
 
 export interface INews {
   id: string;
@@ -12,38 +12,10 @@ export interface INews {
 }
 
 export default function LatestNews() {
-  const [news, setNews] = useState<INews[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const { news, loading, error } = useFetchNews();
 
   // Prevent the re-renders on empty news array
   const memoizeNews = useMemo(() => news, [news]);
-
-  useEffect(() => {
-    setLoading(true);
-    setError(false);
-
-    let ignore = false;
-    const fetchNews = async () => {
-      try {
-        const news = await fetchNewsData();
-        if (!ignore) {
-          setNews(news);
-          setLoading(false);
-        }
-      } catch (error) {
-        console.log(error);
-        if (!ignore) {
-          setError(true);
-          setLoading(false); // stop loading animation
-        }
-      }
-    };
-    fetchNews();
-    return () => {
-      ignore = true;
-    };
-  }, []);
 
   return (
     <Container>
@@ -77,15 +49,4 @@ export default function LatestNews() {
       </div>
     </Container>
   );
-}
-
-async function fetchNewsData(): Promise<INews[]> {
-  await randomDelay();
-  const response = await axios.get(NEWS_API);
-
-  if (response.status !== 200) {
-    throw new Error(response.statusText);
-  }
-
-  return response.data;
 }

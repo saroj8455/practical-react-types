@@ -14,7 +14,7 @@ export default function ProductsDashboard() {
 
   const fetchProducts = useCallback(async () => {
     const searchQuery = debouncedValue || '';
-    console.log(searchQuery);
+    // console.log(searchQuery);
     const response = await fetch(`${DUMMY_PRODUCTS_API}=${searchQuery}`);
     const data = (await response.json()) as ApiResponse;
     setProducts(data.products);
